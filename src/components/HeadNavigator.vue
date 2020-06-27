@@ -1,6 +1,6 @@
 <template>
   <nav id="navigator" class="nav-extended">
-    <div id="navbarlol" class="nav-content teal">
+    <div id="navbarlol" class="nav-content green">
       <ul class="tabs tabs-transparent">
         <li class="tab">
           <a href="#start" id="startLink">Start</a>
@@ -26,10 +26,16 @@ export default {
 </script>
 
 <style scoped>
-    #navbarlol {
+    nav {
         width: 100%;
         position: fixed;
         top: 0;
         z-index: 1;
     }
+
+    ul.tabs.tabs-transparent {
+      display: flex;
+      justify-content: center;
+    }
+
 </style>
