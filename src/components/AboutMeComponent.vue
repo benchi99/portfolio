@@ -1,6 +1,6 @@
 <template>
-  <div id="aboutMeContent" class="container">
-        <div class="card-panel green z-depth-5" id="card">
+  <div id="aboutMeContent">
+        <div class="card-panel green z-depth-5 container" id="aboutme-card">
             <p class="white-text flow-text">
                 Hi, my name is Rubén Bermejo, I'm a {{ age }} year old <a :href="europassDamLink">Higher Technician in Multiplatform Application Development</a>.
             </p>
@@ -19,7 +19,7 @@
             </p>
 
             <p class="white-text flow-text">
-                My passion is Game Development, but I also just love programming and writting code, for anything I see that can be interesting and would be good to learn.
+                My passion is Game Development, but I also just love programming and writting code, for anything I see that can be interesting and would be cool to learn.
             </p>
         </div>
   </div>
@@ -27,7 +27,7 @@
 
 <script>
 export default {
-    name: 'AboutMeContent',
+    name: 'AboutMeComponent',
     data: () => {
         return  {
             europassDamLink: 'http://todofp.es/dam/jcr:7655e32d-08a3-47a7-a479-ddb6f032c63e/tsdesarrolloaplicacionesmultiplataformaen-pdf.pdf'
@@ -49,19 +49,30 @@ export default {
 </script>
 
 <style>
-    div#card > p > a {
+    div#aboutme-card > p > a {
         color: greenyellow;
     }
 
-    div#card {
+    div#aboutme-card {
+        display: flex;
+        flex-flow: column;
         border-radius: 20px;
         margin-top: 5em;
         margin-bottom: 5em;
     }
 
-    div#card > p {
+    div#aboutme-card > p {
         padding: 5px;
         margin-right: 15px;
         margin-left: 15px;
+    }
+
+    #aboutMeContent {
+        height: 100%;
+        width: 100%;
+        background: url('./../assets/background1.jpg') no-repeat center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>
