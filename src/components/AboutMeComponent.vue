@@ -1,27 +1,28 @@
 <template>
   <div id="aboutMeContent">
-        <div class="card-panel green z-depth-5 container" id="aboutme-card">
-            <p class="white-text flow-text">
-                Hi, my name is Rubén Bermejo, I'm a {{ age }} year old <a :href="europassDamLink">Higher Technician in Multiplatform Application Development</a>.
-            </p>
+    <div id="bgimage"></div>
+    <div class="card-panel green z-depth-5 container" id="aboutme-card">
+        <p class="white-text">
+            Hi, my name is Rubén Bermejo, I'm a {{ age }} year old <a :href="europassDamLink">Higher Technician in Multiplatform Application Development</a>.
+        </p>
 
-            <p class="white-text flow-text">
-                I consider myself a person that is always happy and ready to learn new things, and a committed person when given a set of dates to deliver something.
-            </p>
+        <p class="white-text">
+            I consider myself a person that is always happy and ready to learn new things, and a committed person when given a set of dates to deliver something.
+        </p>
 
-            <p class="white-text flow-text">
-                I'm proficient with Java, Spring, writting unit tests, integration and acceptance tests; C# and the .NET framework; Python, the Django framework; SQL, database handling (specially with MySQL, and Oracle Database);
-                native Android app development, and game development with Unity. I'm also used to work with version control systems such as Git, comfortable with any way of work, as well as used to work in Agile environments.
-            </p>
+        <p class="white-text">
+            I'm proficient with Java, Spring, writting unit tests, integration and acceptance tests; C# and the .NET framework; Python, the Django framework; SQL, database handling (specially with MySQL, and Oracle Database);
+            native Android app development, and game development with Unity. I'm also used to work with version control systems such as Git, comfortable with any way of work, as well as used to work in Agile environments.
+        </p>
 
-            <p class="white-text flow-text">
-                I'm also familiar, but to a lesser extent to Front-End technologies such as CSS, and CSS frameworks; Javascript, JQuery, AJAX; as well as React, and Vue.js; and other languages such as PHP.
-            </p>
+        <p class="white-text">
+            I'm also familiar, but to a lesser extent to Front-End technologies such as CSS, and CSS frameworks; Javascript, JQuery, AJAX; as well as React, and Vue.js; and other languages such as PHP.
+        </p>
 
-            <p class="white-text flow-text">
-                My passion is Game Development, but I also just love programming and writting code, for anything I see that can be interesting and would be cool to learn.
-            </p>
-        </div>
+        <p class="white-text">
+            My passion is Game Development, but I also just love programming and writting code, for anything I see that can be interesting and would be cool to learn.
+        </p>
+    </div>
   </div>
 </template>
 
@@ -59,20 +60,30 @@ export default {
         border-radius: 20px;
         margin-top: 5em;
         margin-bottom: 5em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
     }
 
     div#aboutme-card > p {
         padding: 5px;
         margin-right: 15px;
         margin-left: 15px;
+        font-size: 18px;
+        text-align: justify;
+    }
+    
+    #bgimage {
+        height: 100%;
+        width: 100%;
+        background: url('https://i.redd.it/doolzenxl4c51.jpg') no-repeat center;
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
     }
 
     #aboutMeContent {
         height: 100%;
         width: 100%;
-        background: url('./../assets/background1.jpg') no-repeat center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 </style>
