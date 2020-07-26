@@ -1,7 +1,7 @@
 <template>
     <div id="cooltitle">
         <hr>
-        <h3>{{ text }}</h3>
+        <h3 class="white-text">{{ text }}</h3>
         <hr>
     </div>
 </template>
@@ -21,10 +21,11 @@ export default {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        background-color: #35363A;
     }
 
     hr {
-        border: gray 2px solid;
+        border: white 2px solid;
         width: 33%;
         margin: auto;
         margin-left: 2%;

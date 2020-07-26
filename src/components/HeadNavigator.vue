@@ -3,13 +3,13 @@
     <div id="navbarlol" class="nav-content green">
       <ul class="tabs tabs-transparent">
         <li class="tab">
-          <a href="#start" id="startLink">Start</a>
+          <router-link to="/" id="startLink" exact>Start</router-link>
         </li>
         <li class="tab">
-          <a href="#about" id="aboutLink">About</a>
+          <router-link to="/about" id="aboutLink">About</router-link>
         </li>
         <li class="tab">
-          <a href="#projects" id="projectsLink">Projects</a>
+          <router-link to="/projects" id="projectsLink">Projects</router-link>
         </li>
         <li class="tab">
           <a href id="cv">CV</a>
@@ -37,5 +37,4 @@ export default {
       display: flex;
       justify-content: center;
     }
-
 </style>

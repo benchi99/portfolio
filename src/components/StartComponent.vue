@@ -1,12 +1,10 @@
 <template>
-    <div id="start">
-        <div id="header">
-            <div id="card" class="card-panel green z-depth-5">
-                <img id="logo" alt="my ugly mug" src="./../assets/yo.png">
-                <div id="title">
-                    <h3 class="white-text">Rubén Bermejo Romero</h3>
-                    <h5 class="white-text">Higher Technician in Multiplatform Application Development</h5>
-                </div>
+    <div id="header">
+        <div id="header-card" class="card-panel green z-depth-5">
+            <img id="logo" alt="my ugly mug" src="./../assets/yo.png">
+            <div id="title">
+                <h3 class="white-text">Rubén Bermejo Romero</h3>
+                <h5 class="white-text">Higher Technician in Multiplatform Application Development</h5>
             </div>
         </div>
     </div>
@@ -18,16 +16,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
     #header {
-        height: 600px;
+        height: 100%;
         background: url('./../assets/background1.jpg') no-repeat center;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    #card {
+    #header-card {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -35,7 +33,7 @@ export default {
         border-radius: 20px;
     }
 
-    #card > * {
+    #header-card > * {
         padding: 30px;
     }
 </style>
